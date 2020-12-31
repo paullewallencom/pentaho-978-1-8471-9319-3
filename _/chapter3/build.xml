@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project name="Chapter 3 Examples" default="war"> 
+	
+	<property name="tomcat.home" value="c:/apache-tomcat-5.5.25"/>
+	<path id="classpath">
+		<fileset dir="lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset file="${tomcat.home}/common/lib/servlet-api.jar"/>
+	</path>
+
+	<path id="runtime_classpath"> 
+		<fileset dir="lib"> 
+			<include name="*.jar" /> 
+		</fileset> 
+		<dirset dir="classes"/> 
+	</path> 
+	 
+	<target name="clean"> 
+		<delete dir="classes"/> 
+	</target> 
+	 
+	<target name="compile"> 
+		<mkdir dir="classes"/> 
+		<javac classpathref="classpath" destdir="classes" fork="true" srcdir="src"/> 
+	</target> 
+	 
+	<target name="war" depends="compile">
+		<delete file="chapter3.war"/>
+		<war basedir="war" destfile="chapter3.war" webxml="war/WEB-INF/web.xml">
+			<classes dir="classes"/>
+			<zipfileset dir="data" prefix="data"/>
+			<zipfileset dir="lib" prefix="WEB-INF/lib"/>
+		</war>
+		<delete dir="${tomcat.home}/webapps/chapter3"/>
+		<delete file="${tomcat.home}/webapps/chapter3.war"/>
+		<copy file="chapter3.war" todir="${tomcat.home}/webapps"/>
+	</target>
+	
+	<target name="start_tomcat" depends="war">
+		<exec timeout="10000" dir="${tomcat.home}/bin" executable="${tomcat.home}/bin/shutdown.bat"/>
+		<sleep seconds="2"/>
+		<exec dir="${tomcat.home}/bin" executable="${tomcat.home}/bin/startup.bat"/>
+	</target>
+
+	 
+</project>

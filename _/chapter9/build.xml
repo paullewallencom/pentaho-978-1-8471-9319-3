@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project name="Chapter 9 Examples" default="runswinginteractive"> 
+	
+	<property name="tomcat.home" value="c:/apache-tomcat-5.5.25"/>
+	<path id="classpath">
+		<fileset dir="lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset file="${tomcat.home}/common/lib/servlet-api.jar"/>
+	</path>
+
+	<path id="runtime_classpath"> 
+		<fileset dir="lib"> 
+			<include name="*.jar" /> 
+		</fileset> 
+		<dirset dir="classes"/> 
+	</path> 
+	 
+	<target name="clean"> 
+		<delete dir="classes"/> 
+	</target> 
+	 
+	<target name="compile"> 
+		<mkdir dir="classes"/> 
+		<javac classpathref="classpath" destdir="classes" fork="true" srcdir="src"/> 
+	</target> 
+	 
+	<target name="runswinginteractive" depends="compile"> 
+		<java fork="true" classpathref="runtime_classpath" classname="Chapter9SwingApp"/> 
+	</target>
+	
+	<target name="war" depends="compile">
+		<delete file="chapter9.war"/>
+		<war basedir="war" destfile="chapter9.war" webxml="war/WEB-INF/web.xml">
+			<classes dir="classes"/>
+			<zipfileset dir="data" prefix="data"/>
+			<zipfileset dir="lib" prefix="WEB-INF/lib"/>
+		</war>
+		<delete dir="${tomcat.home}/webapps/chapter9"/>
+		<delete file="${tomcat.home}/webapps/chapter9.war"/>
+		<copy file="chapter9.war" todir="${tomcat.home}/webapps"/>
+	</target>
+	
+	<target name="start_tomcat" depends="war">
+		<exec timeout="1000" dir="${tomcat.home}/bin" executable="${tomcat.home}/bin/shutdown.bat"/>
+		<sleep seconds="2"/>
+		<exec dir="${tomcat.home}/bin" executable="${tomcat.home}/bin/startup.bat"/>
+	</target>
+
+	 
+</project>

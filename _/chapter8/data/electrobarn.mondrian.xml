@@ -1,0 +1,17 @@
+<Schema name="electrobarn">
+	<Cube name="Sales">
+		<Table name="SALES_FACT"/>
+		<Dimension name="Employee">
+			<Hierarchy hasAll="true">
+				<Level name="Employee Name" column="EMPLOYEE"/>
+			</Hierarchy>
+		</Dimension>
+		<Dimension name="Time">
+			<Hierarchy hasAll="true">
+				<Level name="Sale Day" column="SALEDAY"/>
+				<Level name="Sale Time" column="SALETIME"/>
+			</Hierarchy>
+		</Dimension>
+		<Measure name="Total Sales" column="SALEPRICE" aggregator="sum"/>
+	</Cube>
+</Schema>

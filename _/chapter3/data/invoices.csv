@@ -1,0 +1,5 @@
+invoiceid,customerid,salesrep,invoicedate,shipdate,shipby,shipprice,notes
+
+3543,1,Tom Scott,2008-09-21,2008-09-26,ups,25.0,
+3544,2,Hugh Bradley,2008-09-21,2008-09-25,fedex,35.0,"Handle with care:  The components involved in this invoice are fragile, please keep the package in an upright position.  Please note, all items are individually wrapped."
+3545,3,Hugh Bradley,2008-09-22,2008-09-23,usps,14.0,

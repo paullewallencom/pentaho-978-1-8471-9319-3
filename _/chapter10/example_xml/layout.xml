@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<layout xmlns="http://reporting.pentaho.org/namespaces/engine/classic/bundle/layout/1.0" xmlns:style="http://reporting.pentaho.org/namespaces/engine/classic/bundle/style/1.0" xmlns:core="http://reporting.pentaho.org/namespaces/engine/attributes/core"> 
+  <report-header> 
+    <root-level-content> 
+      <label> 
+        <style:element-style> 
+          <style:text-styles bold="true"/> 
+          <style:spatial-styles x="1" y="1" min-width="100" min-height="20"/> 
+        </style:element-style> 
+        <core:value>Library Information</core:value> 
+      </label> 
+    </root-level-content> 
+  </report-header> 
+  <group> 
+    <fields> 
+    </fields> 
+    <data-body> 
+      <details> 
+        <root-level-content> 
+          <text-field core:field="Name"> 
+            <style:element-style> 
+              <style:spatial-styles x="1" y="1" min-width="100" min-height="20"/> 
+            </style:element-style> 
+          </text-field> 
+          <text-field core:field="SizeKilobytes"> 
+            <style:element-style> 
+              <style:spatial-styles x="101" y="1" min-width="100" min-height="20"/> 
+            </style:element-style> 
+          </text-field> 
+        </root-level-content> 
+      </details> 
+    </data-body> 
+  </group> 
+</layout> 

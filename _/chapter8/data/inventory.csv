@@ -1,0 +1,52 @@
+"Item Name","Item Description","Item Category","Item ID","On Hand","On Order","Sale Price","Cost","Manufacturer"
+
+6 C Battery Pack,A 6 pack of C sized batteries,Batteries,1,20,5,5.99,3.0,BatterySource
+2 9V Battery Pack,A 2 pack of 9V sized batteries,Batteries,2,17,10,4.99,2.5,BatterySource
+12 AA Battery Pack,A 12 pack of AA sized batteries,Batteries,3,23,5,6.99,3.5,BatterySource
+20 AAA Battery Pack,A 20 pack of AAA sized batteries,Batteries,4,14,15,6.99,3.5,BatterySource
+4 D Battery Pack,A 4 pack of D sized batteries,Batteries,5,12,20,7.99,4.0,BatterySource
+BG 1999 Watch Battery,"A single BG 1999 watch battery, used in advanced digital watches",Batteries,6,5,0,9.99,5.0,BatterySource
+FI 1535 Watch Battery,"A single  FI 1535 watch battery, used in digital watches",Batteries,7,5,0,9.99,5.0,BatterySource
+MS 0813 Camcorder Battery,"A MS 0813 battery, designed for MS Camcorders",Batteries,8,3,5,59.95,30.0,BatterySource
+6 AA Lithium Ion Battery Pack,A 6 pack of AA sized lithium ion batteries,Batteries,9,15,10,9.95,4.0,BatterySource
+Electro RC Car Racer,A hydrogen based RC electric car,RC Vehicles,10,5,2,59.95,40.0,Electro
+Ethanol Hybrid RC EnviroCar,A hybrid RC car which burns ethanol,RC Vehicles,11,4,2,44.95,30.0,Electro
+Speedy Fly RC Hovercraft,"A RC hovercraft, 1:15 scale",RC Vehicles,12,3,5,49.95,35.0,Speedy Fly
+Speedy Fly RC UAV Airplane,A RC airplane that can fly in auto-pilot mode,RC Vehicles,13,5,0,149.99,120.0,Speedy Fly
+Speedy Fly RC Helicopter,An easy to learn counter-rotating RC helicopter,RC Vehicles,14,4,5,99.95,75.0,Speedy Fly
+Electro RC Solar Speed Boat,A Solar powered RC speed boat,RC Vehicles,15,2,5,79.99,55.0,Electro
+Electro RC Talking Robot,"Record a sound in the Remote, and have the robot play it back from it's mouth!",RC Vehicles,16,1,1,249.99,200.0,Electro
+Electro RC Eco Monster Truck,An all electric RC monster truck,RC Vehicles,17,3,2,59.99,45.0,Electro
+"Green Electronics Hi-Def LCD 30"" TV","30"" High Definition LCD thin TV",Electronics,18,0,1,999.99,750.0,Green Electronics
+Green Electronics 20 Megapixel Digital Camera,"A digital camera with a 2"" LCD screen and 1GB Flash Memory",Electronics,19,3,5,495.99,400.0,Green Electronics
+Green Electronics MP3 Audio Mini Player,A portable audio player,Electronics,20,6,5,75.99,55.0,Green Electronics
+Tried and True Portable CD Player,A portable CD audio player,Electronics,21,4,5,24.99,15.0,Tried and True
+Tried and True Radio Alarm Clock,A simple alarm clock,Electronics,22,7,5,14.99,10.0,Tried and True
+Phantom Electronics Handheld Gaming Device,Portable gaming device,Electronics,23,0,10,149.99,125.0,Phantom Electronics
+iGlasses,Watch TV and Movies while wearing your shades,Electronics,24,3,5,239.99,200.0,Phantom Electronics
+GPSNote,"Record a message, recall the location and time",Electronics,25,6,0,34.95,27.0,Phantom Electronics
+RememberRing,An electric ring that vibrates to remind you of appointments,Electronics,26,17,0,29.95,20.0,Phantom Electronics
+ENewsPaper,Electronic Paper News Reader,Electronics,27,15,0,349.95,325.0,Phantom Electronics
+9V Universal Power Supply,AC to DC power supply,Electric Components,28,6,10,14.95,7.0,CapResTrans Inc
+Soldering Kit,Soldering Iron and stand,Electric Components,29,11,0,24.95,10.0,CapResTrans Inc
+Toggle Switch,A simple toggle switch,Electric Components,30,32,0,1.49,0.5,CapResTrans Inc
+Digital Multimeter,Multi-featured Digital Multimeter,Electric Components,31,7,5,59.95,25.0,CapResTrans Inc
+Resistor Variety Pack,A variety pack of 100 resistors,Electric Components,32,27,0,4.99,1.0,CapResTrans Inc
+8 White LED Pack,A 6 pack of white LED components,Electric Components,33,26,0,4.99,1.0,CapResTrans Inc
+Capacitor Variety Pack,A variety pack of 25 capacitors,Electric Components,34,23,0,4.99,1.0,CapResTrans Inc
+Timer 8 PIN DIP IC,A Timer chip component,Electric Components,35,17,10,1.99,0.5,CapResTrans Inc
+"2""x6"" Breadboard Socket",A breadboard for building electronic components,Electric Components,36,15,10,3.95,1.0,CapResTrans Inc
+PC Board 2193,"A PC board, soldering required",Electric Components,37,16,10,2.49,0.5,CapResTrans Inc
+18V Hobby Motor,A small 16V hobby motor,Electric Components,38,23,10,4.99,2.0,CapResTrans Inc
+15 NPN Transistor Pack,NPN Transistor Pack,Electric Components,39,28,0,4.99,2.0,CapResTrans Inc
+20 Assorted LED Variety Pack,An assortment of LEDs,Electric Components,40,21,10,4.99,2.0,CapResTrans Inc
+Tried and True PC Speakers,80 Watt PC Speakers,Computer Accessories,41,9,5,19.95,10.0,Tried and True
+Green Electronics Ink Jet Printer,Recyclable Ink Cartridge based Ink Jet Printer,Computer Accessories,42,4,5,195.99,150.0,Green Electronics
+Green Electronics AC PSU,Power Supply Unit for PCs,Computer Accessories,43,8,5,14.5,5.0,Green Electronics
+Infrared Wireless Mouse and Keyboard,Mouse and Keyboard combo,Computer Accessories,44,12,0,59.95,30.0,ComperNet
+External 120GB Harddrive,"120 Gigabyte storage disk, external",Computer Accessories,45,10,5,99.95,60.0,ComperNet
+Wireless 802.11g Router,Wireless Router,Computer Accessories,46,6,5,39.95,25.0,ComperNet
+Wireless 802.11g Bridge,Wireless Bridge,Computer Accessories,47,5,5,29.95,20.0,ComperNet
+2GB USB Memory Stick,Small 2 Gigabyte USB memory stick,Computer Accessories,48,21,0,19.95,14.0,ComperNet
+ScratchTab,An affordable electornic drawing tablet,Computer Accessories,49,11,0,39.95,25.0,ComperNet
+Tried and True External DVD Player,USB External DVD player for computers,Computer Accessories,50,4,5,59.95,44.0,ComperNet

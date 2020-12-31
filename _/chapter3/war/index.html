@@ -1,0 +1,25 @@
+<html>
+<body>
+<h1>Example Application</h1>
+<p>This is an example application demonstrating how to embed Pentaho Reporting into your web application.</p>
+<a href="report?outputFormat=pdf&reportName=inventory">Generate Inventory PDF Report</a>
+<p> 
+<form action="report"> 
+   <b>End Of Day Report</b><br>
+   <input type="hidden" name="outputFormat" value="pdf">
+   <input type="hidden" name="reportName" value="endofday"> 
+   Session ID: 
+   <select name="sessionId"> 
+      <option>1</option> 
+      <option>2</option> 
+      <option>3</option> 
+      <option>4</option> 
+      <option>5</option> 
+   </select> 
+   <br> 
+   <input type="submit" value="Run Report"> 
+</form> 
+</p>
+<a href="report?outputFormat=pdf&reportName=invoices">Invoice Burst Report</a>
+</body>
+</html>

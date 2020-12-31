@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="LibraryInfo" table="LIBRARYINFO">
+    <id name="name" column="name" type="string"/>
+    <property name="description" type="string"/>
+    <property name="size" type="long"/>
+</class>
+</hibernate-mapping>

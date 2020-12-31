@@ -1,0 +1,12 @@
+<data-schema xmlns="http://reporting.pentaho.org/namespaces/engine/classic/dataschema/1.0">
+
+  <indirect-mapping>
+    <match domain="exampleDomain"
+           name="exampleLabel"/>
+           
+    <data-attribute-mapping target-domain="http://reporting.pentaho.org/namespaces/engine/meta-attributes/formatting"
+                            target-name="label"
+                            source-domain="exampleDomain"
+                            source-name="exampleLabel"/>
+  </indirect-mapping>
+</data-schema>

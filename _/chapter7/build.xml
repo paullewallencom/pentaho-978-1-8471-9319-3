@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project name="Chapter 7 Examples" default="run"> 
+	
+	<path id="classpath">
+		<fileset dir="lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<path id="runtime_classpath"> 
+		<fileset dir="lib"> 
+			<include name="*.jar" /> 
+		</fileset> 
+		<dirset dir="classes"/> 
+	</path> 
+	 
+	<target name="clean"> 
+		<delete dir="classes"/> 
+	</target> 
+	 
+	<target name="compile"> 
+		<mkdir dir="classes"/> 
+		<javac classpathref="classpath" destdir="classes" fork="true" srcdir="src"/> 
+	</target> 
+	 
+	<target name="run" depends="compile"> 
+		<java fork="true" classpathref="runtime_classpath" classname="Chapter2SwingApp"/> 
+	</target> 
+	
+</project>

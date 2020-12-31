@@ -1,0 +1,18 @@
+<meta-data xmlns="http://reporting.pentaho.org/namespaces/engine/classic/metadata/1.0">
+
+  <expression class="RegexExpression"
+              bundle-name="RegexExpressionBundle"
+              result="java.lang.String" hidden="false">
+
+    <property name="dependencyLevel" mandatory="false" 
+              value-role="Value" hidden="false"/>
+
+    <property name="field" mandatory="true" value-role="Field"
+              hidden="false"/>
+
+    <property name="regex" mandatory="true" value-role="Value"
+              hidden="false"/>
+    <property name="name" mandatory="true" value-role="Name"
+              hidden="false"/>
+  </expression>
+</meta-data>

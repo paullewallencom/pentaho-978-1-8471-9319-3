@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<style xmlns="http://reporting.pentaho.org/namespaces/engine/classic/bundle/style/1.0" xmlns:layout="http://reporting.pentaho.org/namespaces/engine/classic/bundle/layout/1.0" xmlns:core="http://reporting.pentaho.org/namespaces/engine/attributes/core"> 
+  <page-definition horizontal-span="1" vertical-span="1" pageformat="LETTER" orientation="portrait" margin-top="72" margin-left="72" margin-bottom="72" margin-right="72"/> 
+  <layout:page-footer> 
+    <layout:label> 
+      <element-style> 
+        <spatial-styles x="364" y="3" min-width="100" min-height="20"/> 
+      </element-style> 
+      <core:value>Page Footer Label</core:value> 
+    </layout:label> 
+  </layout:page-footer> 
+</style> 

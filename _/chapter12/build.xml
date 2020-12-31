@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project name="Chapter 12 Examples" default="jar"> 
+	 
+	<path id="classpath">
+		<fileset dir="lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="clean"> 
+		<delete dir="classes"/> 
+	</target> 
+	 
+	<target name="compile"> 
+		<mkdir dir="classes"/> 
+		<javac classpathref="classpath" destdir="classes" debug="true" fork="true" srcdir="src"/> 
+	</target>
+
+	<target name="jar" depends="compile"> 
+		<mkdir dir="dist"/>
+		<copy todir="classes" overwrite="true">
+			<fileset dir="src">
+				<exclude name="**/*.java"/>
+			</fileset>
+		</copy>
+		<jar destfile="dist/chapter12.jar" basedir="classes"/> 
+	</target>
+	
+	<path id="runtime_classpath">
+		<fileset dir="lib">
+			<include name="*.jar" />
+		</fileset>
+		<dirset dir="classes"/>
+	</path>
+
+	<target name="runmeta" depends="jar">
+		<java fork="true" classpathref="runtime_classpath" classname="MetaTableModelDemo"/>
+	</target>
+
+	<target name="runpojo" depends="jar">
+		<java fork="true" classpathref="runtime_classpath" classname="PojoUtil"/>
+	</target>
+
+</project>

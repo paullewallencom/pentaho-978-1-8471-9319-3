@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<web-app>
+	<servlet>
+		<servlet-name>Chapter3Servlet</servlet-name>
+		<servlet-class>Chapter3Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Chapter3Servlet</servlet-name>
+	 	<url-pattern>/report</url-pattern>
+	</servlet-mapping>
+</web-app>

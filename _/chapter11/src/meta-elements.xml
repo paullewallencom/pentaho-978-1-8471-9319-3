@@ -1,0 +1,38 @@
+<meta-data xmlns="http://reporting.pentaho.org/namespaces/engine/classic/metadata/1.0">
+  
+  <include-globals src="res://org/pentaho/reporting/engine/classic/core/metadata/global-meta-elements.xml"/>
+  
+  <element name="star" hidden="false" bundle-name="metadata"
+           implementation="StarType">
+
+    <attribute-group-ref ref="common-attributes"/>
+    <attribute-group-ref ref="interactivity"/>
+    
+    <attribute namespace="http://reporting.pentaho.org/namespaces/pr4jd"
+               name="inner-percent"
+               mandatory="true"
+               hidden="false"
+               value-type="java.lang.Number"
+               value-role="Value"/>
+
+    <attribute namespace="http://reporting.pentaho.org/namespaces/pr4jd"
+               name="start-angle"
+               mandatory="true"
+               hidden="false"
+               value-type="java.lang.Number"
+               value-role="Value"/>
+
+    <attribute namespace="http://reporting.pentaho.org/namespaces/pr4jd"
+               name="points"
+               mandatory="true"
+               hidden="false"
+               value-type="java.lang.Number"
+               value-role="Value"/>               
+
+    <style-group-ref ref="borders"/>
+    <style-group-ref ref="common"/>
+    <style-group-ref ref="layout"/>
+    <style-group-ref ref="replaced-content"/>
+  </element>
+  
+</meta-data>

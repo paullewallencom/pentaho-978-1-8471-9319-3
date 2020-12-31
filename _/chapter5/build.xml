@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project name="Chapter 5 Examples" default="runstatic"> 
+	
+	<property name="tomcat.home" value="c:/apache-tomcat-5.5.25"/>
+	<path id="classpath">
+		<fileset dir="lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset file="${tomcat.home}/common/lib/servlet-api.jar"/>
+	</path>
+
+	<path id="runtime_classpath"> 
+		<fileset dir="lib"> 
+			<include name="*.jar" /> 
+		</fileset> 
+		<dirset dir="classes"/>
+		<dirset dir="src"/> 
+	</path> 
+	 
+	<target name="clean"> 
+		<delete dir="classes"/> 
+	</target> 
+	 
+	<target name="compile"> 
+		<mkdir dir="classes"/> 
+		<javac classpathref="classpath" destdir="classes" fork="true" srcdir="src"/> 
+	</target> 
+
+	<target name="runstatic" depends="compile"> 
+		<java fork="true" classpathref="runtime_classpath" classname="NamedStaticDataFactoryApp"/> 
+	</target>
+	 
+	<target name="runsql" depends="compile"> 
+		<java fork="true" classpathref="runtime_classpath" classname="SQLReportDataFactoryApp"/> 
+	</target>
+
+	<target name="runxpath" depends="compile"> 
+		<java fork="true" classpathref="runtime_classpath" classname="XPathDataFactoryApp"/> 
+	</target>
+	
+	<target name="runhql" depends="compile"> 
+		<java fork="true" classpathref="runtime_classpath" classname="HQLDataFactoryApp"/> 
+	</target>
+	
+	<target name="runpmd" depends="compile"> 
+		<java fork="true" classpathref="runtime_classpath" classname="PmdDataFactoryApp"/> 
+	</target>
+
+	<target name="runkettle" depends="compile"> 
+		<java fork="true" classpathref="runtime_classpath" classname="KettleDataFactoryApp"/> 
+	</target>
+
+	<target name="runmdx" depends="compile"> 
+		<java fork="true" classpathref="runtime_classpath" classname="BandedMDXDataFactoryApp"/> 
+	</target>
+
+</project>

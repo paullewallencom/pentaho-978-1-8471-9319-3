@@ -1,0 +1,16 @@
+<Schema name="New Schema1">
+	<Cube name="Library Info" cache="true" enabled="true">
+		<Table name="LIBRARYINFO" schema="PUBLIC">
+		</Table>
+		<Dimension type="StandardDimension" name="Library">
+			<Hierarchy name="New Hierarchy 0" hasAll="true">
+				<Level name="Library Name" column="NAME" uniqueMembers="false">
+					<Property name="LibDescription" column="DESCRIPTION" type="String">
+					</Property>
+				</Level>
+			</Hierarchy>
+		</Dimension>
+		<Measure name="Size" column="SIZE" aggregator="sum" visible="true">
+		</Measure>
+	</Cube>
+</Schema>

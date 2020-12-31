@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<web-app>
+	<servlet>
+		<servlet-name>DashboardServlet</servlet-name>
+		<servlet-class>DashboardServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DashboardServlet</servlet-name>
+	 	<url-pattern>/report</url-pattern>
+	</servlet-mapping>
+</web-app>
